@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Verylightgray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+    --LexandDeca: 'Lexend Deca', sans-serif;
+    --BigShoulderDisplay: 'Big Shoulders Display', cursive;
+}
+
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--Verylightgray);
+}
+.container {
+    margin: 88px 25px;
+}
+
+/*cards*/
+.cards-container {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.cards {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.card-1 {
+    background-color: var(--Brightorange);
+}
+.card-2 {
+    background-color: var(--Darkcyan);
+}
+.card-3 {
+    background-color: var(--Verydarkcyan);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content h1 {
+    font-family: var(--BigShoulderDisplay);
+    font-size: 700;
+    color: var(--Verylightgray);
+}
+.content p {
+    font-family: var(--LexandDeca);
+    font-size: 400;
+    line-height: 25px;
+    color: var(--Transparentwhite);
+}
+.content a {
+    text-decoration: none;
+    background-color: var(--Transparentwhite);
+    padding: 15px 25px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 145px;
+    border-radius: 30px;
+}
+.content a:hover {
+    border: 1px solid var(--Verylightgray);
+    color: var(--Verylightgray);
+    background-color: transparent;
+}
+.card-1 a {
+    color: var(--Brightorange);
+}
+.card-2 a {
+    color: var(--Darkcyan);
+}
+.card-3 a {
+    color: var(--Verydarkcyan);
+}
+/*footer*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 700px) {
+    .cards {
+        max-width: 305px;
+        height: 500px;
+    }
+    .cards-container {
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 900px;
+        margin: 88px auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        margin: 88px auto;
+    }
+}
